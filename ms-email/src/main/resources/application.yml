@@ -1,0 +1,27 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/ms-email
+    username: postgres
+    password: 12345
+    driverClassName: org.postgresql.Driver
+
+  mail:
+    default-encoding: UTF-8
+    host: smtp.gmail.com
+    username: douglaslopez849@gmail.com
+    password: iaujmxhduntixzxt
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    protocol: smtp
+    test-connection: false
